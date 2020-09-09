@@ -90,7 +90,7 @@ class DaoLoja {
         $lojas = [];
         if ($stmt) {
           if ($stmt->execute()) {
-            $id = 0;
+            $id = 0; $nome = '';
             $stmt->bind_result($id, $nome,$cnpj,$endereco,$cidade,$estado,$cep,$telefone);
             $stmt->store_result();
             while($stmt->fetch()) {

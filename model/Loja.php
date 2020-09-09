@@ -50,7 +50,6 @@ class Loja {
     $this->cep = $cep;
 }
 
-  
     public function setEstado(string $estado) {
        $this->estado = $estado;
   }
@@ -59,7 +58,6 @@ class Loja {
        $this->telefone = $telefone;
   }
   
-
   public function getNome() {
       return $this->nome;
   }
@@ -84,10 +82,8 @@ class Loja {
      return $this->cep;
  }
 
-  
     public function getTelefone() {
       return $this->telefone;
   }
-  
   
 };

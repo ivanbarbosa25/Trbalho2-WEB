@@ -11,7 +11,7 @@ class DaoLoja {
     }
 
     public function porId(int $id): ?Loja {
-        $sql = "SELECT nome,cnpj,endereco,cidade,estado,cep,telefone, FROM lojas where loja_id = ?";
+        $sql = "SELECT nome,cnpj,endereco,cidade,estado,cep,telefone FROM lojas where loja_id = ?";
         $stmt = $this->connection->prepare($sql);
         $loj = null;
         if ($stmt) {

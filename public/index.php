@@ -94,7 +94,7 @@ ob_start();
         if (count($lojas) >0) {
           echo "<ul>";
           foreach($lojas as $l) {
-            echo "<li>[" . $l->getId() . "] - " . $l->getNome() .  "</li>";
+            echo "<li>[" . $l->getId() . "] - " . $l->getNome() . "</li>";
           }
           echo "</ul>";
         }
